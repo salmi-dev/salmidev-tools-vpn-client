@@ -1,0 +1,7 @@
+config/credentials
+config/client.ovpn
+*.ovpn
+*.key
+*.pem
+*.crt
+.env

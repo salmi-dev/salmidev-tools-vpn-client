@@ -1,0 +1,22 @@
+# Copy this file to config/client.ovpn and replace the provider-specific values.
+# Most VPN providers supply a complete file; use that file instead when possible.
+
+client
+dev tun
+proto udp
+remote vpn.example.com 1194
+nobind
+persist-key
+persist-tun
+remote-cert-tls server
+verb 3
+
+# If your provider uses username/password authentication, use a two-line
+# credentials file mounted at /config/credentials:
+# auth-user-pass /config/credentials
+
+# Provider-specific CA/certificate/key material usually belongs here or in
+# separate files mounted under /config.
+# ca /config/ca.crt
+# cert /config/client.crt
+# key /config/client.key
